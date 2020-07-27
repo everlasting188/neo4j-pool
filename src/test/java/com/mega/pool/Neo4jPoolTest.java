@@ -16,7 +16,7 @@ public class Neo4jPoolTest {
     public static void main(String[] args) {
         GenericObjectPoolConfig genericObjectPoolConfig = new GenericObjectPoolConfig();
 
-        Neo4jPool neo4jPool = new Neo4jPool(genericObjectPoolConfig,"bolt://192.168.8.200:7687","neo4j","neo4j-yxy-ai","testzyq");
+        Neo4jPool neo4jPool = new Neo4jPool(genericObjectPoolConfig,"bolt://xxxxxx:port","neo4j","neo4j-ai","testzyq");
         long startTime = System.currentTimeMillis();
         int count = 1000;
         for(int i=0;i<count;i++){

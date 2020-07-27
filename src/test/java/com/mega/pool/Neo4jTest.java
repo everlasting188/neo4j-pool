@@ -19,7 +19,7 @@ public class Neo4jTest {
     }
 
     private void init(){
-        Driver driver = GraphDatabase.driver("bolt://xxxxxx:7687", AuthTokens.basic("xxxxx", "xxxxx"));
+        Driver driver = GraphDatabase.driver("bolt://xxxxxx:port", AuthTokens.basic("xxxxx", "xxxxx"));
         long startTime = System.currentTimeMillis();
         Session sessionLocal = driver.session();
         try (Session session = driver.session()) {
